@@ -32,16 +32,14 @@ ORDER BY
 Answers to Questions  
 
 1. Which date had the least number of redemptions and what was the redemption count?
-Date: 2023-11-05
-Redemption Count: 3702
-2. Which date had the most number of redemptions and what was the redemption count?
-Date: 2023-10-31
-Redemption Count: 5003
-3. What was the createDateTime for each redemptionCount in questions 1 and 2?
-For 2023-11-05 (least redemptions): 2023-11-06 11:00:00 UTC
-For 2023-10-31 (most redemptions): 2023-11-06 11:00:00 UTC
-4. Is there another method you can use to pull back the most recent redemption count, by redemption date, for the date range 2023-10-30 to 2023-11-05, for retailer "ABC Store"?
-Yes, another method involves using a subquery to get the maximum createDateTime for each redemptionDate and then joining it back to the main table. This would ensure that only the most recent record for each date is fetched.
+   Date: 2023-11-05, Redemption Count: 3702
+3. Which date had the most number of redemptions and what was the redemption count?
+   Date: 2023-10-31, Redemption Count: 5003
+4. What was the createDateTime for each redemptionCount in questions 1 and 2?
+   For 2023-11-05 (least redemptions): 2023-11-06 11:00:00 UTC
+   For 2023-10-31 (most redemptions): 2023-11-06 11:00:00 UTC
+5. Is there another method you can use to pull back the most recent redemption count, by redemption date, for the date range 2023-10-30 to 2023-11-05, for retailer "ABC Store"?
+   Yes, another method involves using a subquery to get the maximum createDateTime for each redemptionDate and then joining it back to the main table. This would ensure that only the most recent record for each date is fetched.
 
 Here’s the high-level approach:
 
